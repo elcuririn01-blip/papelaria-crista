@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papelaria Cristã | Galeria Colaborativa & Gratuita de Moldes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#FDF9F7',
+              100: '#F9F1ED',
+              200: '#F2DFD7',
+              300: '#E4C3B5',
+              400: '#CE9F8C',
+              500: '#B87B66', // Terracotta principal
+              600: '#9E614D',
+              700: '#7E4C3C',
+              800: '#5F392E',
+              900: '#3D251E',
+            },
+            warmgray: {
+              50: '#FAF8F5',
+              100: '#F3EFEA',
+              200: '#E7E1D8',
+              300: '#D5CCC1',
+              400: '#A99D8F',
+              500: '#7F7366',
+              600: '#5F5448',
+              700: '#433A31',
+              800: '#2A241F',
+              900: '#1A1613',
+            },
+            gold: {
+              400: '#D7AC61',
+              500: '#C79A4B',
+              600: '#A67C33',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF8F5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D5CCC1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #B87B66;
+    }
+    .hero-pattern {
+      background-color: #FAF8F5;
+      background-image: radial-gradient(#E7E1D8 0.75px, transparent 0.75px), radial-gradient(#E7E1D8 0.75px, #FAF8F5 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+  </style>
+</head>
+<body class="bg-warmgray-50 text-warmgray-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-warmgray-900 text-warmgray-200 text-xs py-2 px-4 border-b border-warmgray-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center justify-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-brand-500 text-white tracking-wide uppercase">100% Gratuito</span>
+        <span>Uma iniciativa colaborativa: artesãs abençoando artesãs com moldes e arquivos de corte.</span>
+      </div>
+      <div class="flex items-center gap-4 text-warmgray-300">
+        <span class="hidden md:inline flex items-center gap-1"><i data-lucide="heart" class="w-3.5 h-3.5 text-rose-400 inline"></i> Sem mensalidades ou assinaturas</span>
+        <a href="#proposito" class="text-gold-400 hover:text-gold-300 font-semibold underline underline-offset-2">Conheça Nosso Propósito</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-warmgray-200/80 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <i data-lucide="scissors" class="w-5 h-5 -rotate-45"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-warmgray-900">Papelaria Cristã</span>
+            <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded border border-emerald-200">Acesso Livre</span>
+          </div>
+          <p class="text-[11px] text-warmgray-500 font-medium tracking-wide">Galeria Comunitária de Moldes</p>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-warmgray-600">
+        <a href="#galeria" class="hover:text-brand-600 transition-colors">Galeria de Moldes</a>
+        <a href="#categorias" class="hover:text-brand-600 transition-colors">Categorias</a>
+        <a href="#como-funciona" class="hover:text-brand-600 transition-colors">Como Funciona</a>
+        <a href="#proposito" class="hover:text-brand-600 transition-colors">Nosso Propósito</a>
+        <a href="#depoimentos" class="hover:text-brand-600 transition-colors">Depoimentos</a>
+      </nav>
+
+      <!-- Right Action CTAs -->
+      <div class="flex items-center gap-3">
+        <button onclick="openUploadModal()" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-100 border border-brand-200 transition-colors shadow-xs">
+          <i data-lucide="upload-cloud" class="w-4 h-4"></i>
+          <span>Enviar Molde</span>
+        </button>
+
+        <button onclick="openAuthModal('login')" class="text-xs sm:text-sm font-semibold text-warmgray-700 hover:text-brand-600 px-3 py-2 transition-colors">
+          Entrar
+        </button>
+
+        <button onclick="openAuthModal('signup')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs sm:text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-600/25 transition-all transform active:scale-95">
+          <span>Participar Grátis</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative hero-pattern pt-12 pb-20 border-b border-warmgray-200 overflow-hidden">
+    <!-- Subtle Background Glows -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-brand-200/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 right-10 w-[300px] h-[200px] bg-gold-400/20 rounded-full blur-2xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto">
+        
+        <!-- Badge Pill -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-warmgray-200 shadow-xs mb-6 text-xs text-warmgray-700">
+          <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="font-semibold text-brand-700">Startup Social & Comunitária</span>
+          <span class="text-warmgray-300">|</span>
+          <span>Sem planos, sem mensalidades. Ajuda mútua real.</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-warmgray-900 leading-[1.15] tracking-tight">
+          A galeria onde artesãs da <span class="italic font-normal text-brand-600 underline decoration-brand-200 decoration-wavy decoration-2">papelaria cristã</span> se ajudam.
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="mt-6 text-base sm:text-lg text-warmgray-600 leading-relaxed font-normal">
+          Um espaço aberto, sério e colaborativo. Compartilhe seus moldes autorais e baixe arquivos testados em <strong>.STUDIO, .SVG, .PDF e .DXF</strong> para devocionais, cultos, congressos e eventos sem pagar nada por isso.
+        </p>
+
+        <!-- Search Bar Quick Launcher -->
+        <div class="mt-8 bg-white p-2.5 rounded-2xl shadow-xl shadow-warmgray-200/60 border border-warmgray-200/80 max-w-2xl mx-auto flex flex-col sm:flex-row items-center gap-2">
+          <div class="flex items-center gap-2 flex-1 px-3 w-full">
+            <i data-lucide="search" class="w-5 h-5 text-warmgray-400 shrink-0"></i>
+            <input 
+              id="heroSearchInput" 
+              type="text" 
+              placeholder="Busque por 'Caixa Bíblia', 'Marcador Culto', 'Planner A5'..." 
+              class="w-full text-sm text-warmgray-800 placeholder-warmgray-400 focus:outline-none bg-transparent py-1.5"
+              onkeydown="if(event.key === 'Enter') handleHeroSearch()"
+            >
+          </div>
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <button onclick="handleHeroSearch()" class="w-full sm:w-auto px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm transition-colors flex items-center justify-center gap-2 shadow-sm">
+              <span>Buscar Moldes</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Tags -->
+        <div class="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-warmgray-500">
+          <span class="font-medium">Buscas frequentes:</span>
+          <button onclick="quickFilter('Caixa')" class="px-2.5 py-1 bg-white hover:bg-brand-50 border border-warmgray-200 rounded-md transition-colors text-warmgray-700">📦 Caixas 3D</button>
+          <button onclick="quickFilter('Devocional')" class="px-2.5 py-1 bg-white hover:bg-brand-50 border border-warmgray-200 rounded-md transition-colors text-warmgray-700">📖 Devocionais</button>
+          <button onclick="quickFilter('Congresso')" class="px-2.5 py-1 bg-white hover:bg-brand-50 border border-warmgray-200 rounded-md transition-colors text-warmgray-700">🌸 Congresso de Mulheres</button>
+          <button onclick="quickFilter('EBD')" class="px-2.5 py-1 bg-white hover:bg-brand-50 border border-warmgray-200 rounded-md transition-colors text-warmgray-700">🎨 EBD Infantil</button>
+        </div>
+
+        <!-- CTAs Secondary Row -->
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#galeria" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-warmgray-800 bg-white hover:bg-warmgray-100 border border-warmgray-300 shadow-xs transition-all">
+            <i data-lucide="grid" class="w-4 h-4 text-brand-600"></i>
+            <span>Explorar Galeria Gratuita</span>
+          </a>
+          <button onclick="openUploadModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-warmgray-900 hover:bg-warmgray-800 shadow-md transition-all">
+            <i data-lucide="plus-circle" class="w-4 h-4 text-gold-400"></i>
+            <span>Compartilhar um Molde</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Trust Metrics Bar -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-warmgray-200 text-center shadow-xs">
+          <div class="text-2xl lg:text-3xl font-extrabold text-warmgray-900 font-serif">+4.850</div>
+          <div class="text-xs text-warmgray-500 font-medium mt-1">Moldes Compartilhados</div>
+        </div>
+        <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-warmgray-200 text-center shadow-xs">
+          <div class="text-2xl lg:text-3xl font-extrabold text-warmgray-900 font-serif">+14.200</div>
+          <div class="text-xs text-warmgray-500 font-medium mt-1">Artesãs Conectadas</div>
+        </div>
+        <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-warmgray-200 text-center shadow-xs">
+          <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-serif">R$ 0,00</div>
+          <div class="text-xs text-warmgray-500 font-medium mt-1">100% Livre de Cobrança</div>
+        </div>
+        <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-warmgray-200 text-center shadow-xs">
+          <div class="text-2xl lg:text-3xl font-extrabold text-warmgray-900 font-serif">4 Formatos</div>
+          <div class="text-xs text-warmgray-500 font-medium mt-1">Studio, SVG, DXF e PDF</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How It Works (Como Funciona a Colaboração) -->
+  <section id="como-funciona" class="py-16 bg-white border-b border-warmgray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-brand-600">Comunidade de Ajuda Mútua</h2>
+        <p class="font-serif text-2xl sm:text-3xl font-bold text-warmgray-900 mt-2">Como funciona a troca de moldes</p>
+        <p class="text-sm text-warmgray-600 mt-2">Uma rede séria, organizada e ética para artesãs que querem se apoiar sem custos.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <!-- Step 1 -->
+        <div class="relative p-6 rounded-2xl bg-warmgray-50 border border-warmgray-200 hover:border-brand-300 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-lg mb-5 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+            1
+          </div>
+          <h3 class="font-serif text-lg font-bold text-warmgray-900 mb-2">Envie Seus Moldes Autorais</h3>
+          <p class="text-sm text-warmgray-600 leading-relaxed">
+            Fez uma caixinha com versículo, miolo de oração ou marcador de página? Suba seu arquivo em Studio, SVG ou PDF e compartilhe com as irmãs do ramo.
+          </p>
+          <div class="mt-4 flex items-center gap-1.5 text-xs text-brand-700 font-semibold">
+            <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Abençoe outros pequenos ateliês
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative p-6 rounded-2xl bg-warmgray-50 border border-warmgray-200 hover:border-brand-300 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-lg mb-5 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+            2
+          </div>
+          <h3 class="font-serif text-lg font-bold text-warmgray-900 mb-2">Acervo Organizado & Seguro</h3>
+          <p class="text-sm text-warmgray-600 leading-relaxed">
+            Nada de links expirados ou grupos confusos. Todos os arquivos são organizados por evento bíblico, livres de vírus e com medidas testadas.
+          </p>
+          <div class="mt-4 flex items-center gap-1.5 text-xs text-brand-700 font-semibold">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Qualidade e clareza técnica
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative p-6 rounded-2xl bg-warmgray-50 border border-warmgray-200 hover:border-brand-300 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-lg mb-5 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+            3
+          </div>
+          <h3 class="font-serif text-lg font-bold text-warmgray-900 mb-2">Baixe e Atenda Suas Encomendas</h3>
+          <p class="text-sm text-warmgray-600 leading-relaxed">
+            Recebeu um pedido urgente para o culto da congregação? Baixe o molde pronto para tesoura ou plotter, imprima, monte e entregue com carinho.
+          </p>
+          <div class="mt-4 flex items-center gap-1.5 text-xs text-brand-700 font-semibold">
+            <i data-lucide="heart" class="w-3.5 h-3.5"></i> Sem limites ou pegadinhas
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive SaaS Gallery Section -->
+  <section id="galeria" class="py-16 bg-warmgray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <div class="flex items-center gap-2 text-brand-600 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Galeria Colaborativa</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-4xl font-bold text-warmgray-900 mt-1">Explorar Moldes & Arquivos de Corte</h2>
+          <p class="text-sm text-warmgray-600 mt-1">Navegue pelos moldes compartilhados com amor por artesãs de todo o Brasil.</p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button onclick="openUploadModal()" class="px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold transition-all flex items-center gap-2 shadow-sm">
+            <i data-lucide="plus" class="w-4 h-4"></i>
+            <span>Compartilhar Meu Molde</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Filters & Search Toolbar -->
+      <div class="bg-white p-4 rounded-2xl border border-warmgray-200 shadow-sm mb-8 space-y-4">
+        
+        <!-- Category Pills -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="categoryPillsContainer">
+          <button onclick="setCategoryFilter('all')" class="category-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all bg-warmgray-900 text-white">Todos os Moldes</button>
+          <button onclick="setCategoryFilter('devocional')" class="category-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all bg-warmgray-100 hover:bg-warmgray-200 text-warmgray-700">📖 Devocional & Oração</button>
+          <button onclick="setCategoryFilter('caixas')" class="category-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all bg-warmgray-100 hover:bg-warmgray-200 text-warmgray-700">📦 Caixas & Embalagens 3D</button>
+          <button onclick="setCategoryFilter('lembrancinhas')" class="category-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all bg-warmgray-100 hover:bg-warmgray-200 text-warmgray-700">🌸 Cultos & Congressos</button>
+          <button onclick="setCategoryFilter('planners')" class="category-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all bg-warmgray-100 hover:bg-warmgray-200 text-warmgray-700">📔 Planners & Capas A5</button>
+          <button onclick="setCategoryFilter('infantil')" class="category-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all bg-warmgray-100 hover:bg-warmgray-200 text-warmgray-700">🎨 EBD & Ministério Infantil</button>
+          <button onclick="setCategoryFilter('batismo')" class="category-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all bg-warmgray-100 hover:bg-warmgray-200 text-warmgray-700">🕊️ Batismo & Ceia</button>
+        </div>
+
+        <!-- Filter Sub-bar (Search + Formats + Sort) -->
+        <div class="pt-3 border-t border-warmgray-100 flex flex-col md:flex-row items-center justify-between gap-4">
+          
+          <!-- In-gallery search -->
+          <div class="relative w-full md:w-80">
+            <i data-lucide="search" class="w-4 h-4 text-warmgray-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input 
+              id="gallerySearchInput" 
+              type="text" 
+              placeholder="Filtrar por nome, versículo ou tag..." 
+              class="w-full pl-9 pr-3 py-1.5 text-xs rounded-lg border border-warmgray-200 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"
+              oninput="handleLiveFilter()"
+            >
+          </div>
+
+          <!-- Format Filters & Sort Dropdown -->
+          <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+            <div class="flex items-center gap-1.5 text-xs text-warmgray-600">
+              <span class="font-medium hidden sm:inline">Formato:</span>
+              <select id="formatFilter" onchange="handleLiveFilter()" class="text-xs bg-warmgray-50 border border-warmgray-200 rounded-md px-2.5 py-1.5 text-warmgray-700 focus:outline-none">
+                <option value="all">Todos os formatos</option>
+                <option value="STUDIO">Silhouette (.studio3)</option>
+                <option value="SVG">SVG (Cricut / Illustrator)</option>
+                <option value="PDF">PDF (Corte na Tesoura)</option>
+                <option value="DXF">DXF (AutoCAD / Silhouette Base)</option>
+              </select>
+            </div>
+
+            <div class="flex items-center gap-1.5 text-xs text-warmgray-600">
+              <span class="font-medium hidden sm:inline">Ordenar:</span>
+              <select id="sortFilter" onchange="handleSort()" class="text-xs bg-warmgray-50 border border-warmgray-200 rounded-md px-2.5 py-1.5 text-warmgray-700 focus:outline-none">
+                <option value="popular">Mais Baixados</option>
+                <option value="recent">Mais Recentes</option>
+                <option value="likes">Mais Amados</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="moldesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Cards injected dynamically via JavaScript -->
+      </div>
+
+      <!-- Empty State if no results -->
+      <div id="emptyState" class="hidden text-center py-16 bg-white rounded-2xl border border-warmgray-200 p-8">
+        <div class="w-16 h-16 rounded-full bg-warmgray-100 flex items-center justify-center mx-auto text-warmgray-400 mb-4">
+          <i data-lucide="search-x" class="w-8 h-8"></i>
+        </div>
+        <h3 class="font-serif text-lg font-bold text-warmgray-800">Nenhum molde encontrado</h3>
+        <p class="text-xs text-warmgray-500 max-w-sm mx-auto mt-1">Tente ajustar seus termos de busca ou mudar a categoria selecionada.</p>
+        <button onclick="resetFilters()" class="mt-4 px-4 py-2 bg-brand-50 text-brand-700 rounded-lg text-xs font-semibold hover:bg-brand-100 transition-colors">
+          Limpar Filtros
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Categories Showcase -->
+  <section id="categorias" class="py-16 bg-white border-t border-warmgray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-brand-600">Organização Temática</h2>
+        <p class="font-serif text-2xl sm:text-3xl font-bold text-warmgray-900 mt-2">Categorias preparadas para datas e temas bíblicos</p>
+        <p class="text-sm text-warmgray-600 mt-2">Encontre rapidamente o molde ideal para a ocasião da igreja ou cliente.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <div onclick="setCategoryFilter('caixas')" class="cursor-pointer group p-4 rounded-xl bg-warmgray-50 hover:bg-brand-50 border border-warmgray-200 hover:border-brand-300 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-xs mx-auto flex items-center justify-center text-brand-600 group-hover:scale-110 transition-transform mb-3">
+            <i data-lucide="box" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-warmgray-800">Caixas & Embalagens</h4>
+          <span class="text-[11px] text-warmgray-500">1.240 moldes</span>
+        </div>
+
+        <div onclick="setCategoryFilter('devocional')" class="cursor-pointer group p-4 rounded-xl bg-warmgray-50 hover:bg-brand-50 border border-warmgray-200 hover:border-brand-300 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-xs mx-auto flex items-center justify-center text-brand-600 group-hover:scale-110 transition-transform mb-3">
+            <i data-lucide="book-open" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-warmgray-800">Devocionais</h4>
+          <span class="text-[11px] text-warmgray-500">890 moldes</span>
+        </div>
+
+        <div onclick="setCategoryFilter('lembrancinhas')" class="cursor-pointer group p-4 rounded-xl bg-warmgray-50 hover:bg-brand-50 border border-warmgray-200 hover:border-brand-300 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-xs mx-auto flex items-center justify-center text-brand-600 group-hover:scale-110 transition-transform mb-3">
+            <i data-lucide="gift" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-warmgray-800">Cultos & Congressos</h4>
+          <span class="text-[11px] text-warmgray-500">950 moldes</span>
+        </div>
+
+        <div onclick="setCategoryFilter('planners')" class="cursor-pointer group p-4 rounded-xl bg-warmgray-50 hover:bg-brand-50 border border-warmgray-200 hover:border-brand-300 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-xs mx-auto flex items-center justify-center text-brand-600 group-hover:scale-110 transition-transform mb-3">
+            <i data-lucide="calendar" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-warmgray-800">Planners & Cadernos</h4>
+          <span class="text-[11px] text-warmgray-500">620 moldes</span>
+        </div>
+
+        <div onclick="setCategoryFilter('infantil')" class="cursor-pointer group p-4 rounded-xl bg-warmgray-50 hover:bg-brand-50 border border-warmgray-200 hover:border-brand-300 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-xs mx-auto flex items-center justify-center text-brand-600 group-hover:scale-110 transition-transform mb-3">
+            <i data-lucide="smile" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-warmgray-800">EBD Infantil</h4>
+          <span class="text-[11px] text-warmgray-500">710 moldes</span>
+        </div>
+
+        <div onclick="setCategoryFilter('batismo')" class="cursor-pointer group p-4 rounded-xl bg-warmgray-50 hover:bg-brand-50 border border-warmgray-200 hover:border-brand-300 transition-all text-center">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-xs mx-auto flex items-center justify-center text-brand-600 group-hover:scale-110 transition-transform mb-3">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-warmgray-800">Batismo & Ceia</h4>
+          <span class="text-[11px] text-warmgray-500">440 moldes</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Purpose / Manifesto Section (Substituindo Planos e Mensalidades) -->
+  <section id="proposito" class="py-20 bg-warmgray-50 border-t border-warmgray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Por que Sem Planos ou Cobranças?</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-warmgray-900 mt-3">Uma startup sustentada pela generosidade e cooperação</h2>
+        <p class="text-sm text-warmgray-600 mt-3 leading-relaxed">
+          Acreditamos que nenhuma artesã cristã deve ficar sem produzir por não ter condições de pagar mensalidades caras. Nosso modelo é a cooperação pura: <strong>você abençoa quando compartilha, e é abençoada quando precisa de um molde pronto</strong>.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        
+        <!-- Pillar 1 -->
+        <div class="bg-white rounded-2xl p-7 border border-warmgray-200 flex flex-col justify-between shadow-xs hover:border-brand-300 transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-5">
+              <i data-lucide="unlock" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-warmgray-900 mb-2">Acesso Livre & Democrático</h3>
+            <p class="text-xs sm:text-sm text-warmgray-600 leading-relaxed">
+              Todos os moldes publicados estão disponíveis para qualquer artesã baixar, sem limites diários ocultos, sem cartões de crédito e sem cobranças futuras.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-warmgray-100 flex items-center gap-2 text-xs font-bold text-emerald-700">
+            <i data-lucide="check" class="w-4 h-4"></i>
+            <span>Livre para sempre</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-white rounded-2xl p-7 border border-brand-300 ring-2 ring-brand-500/10 flex flex-col justify-between shadow-md">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-5">
+              <i data-lucide="sprout" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-warmgray-900 mb-2">O Princípio da Semeadura</h3>
+            <p class="text-xs sm:text-sm text-warmgray-600 leading-relaxed">
+              Quando você compartilha um molde de caixa bíblica ou marcador que desenvolveu, você ajuda uma irmã que está começando do zero em outro estado a fechar sua primeira encomenda.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-warmgray-100 flex items-center gap-2 text-xs font-bold text-brand-700">
+            <i data-lucide="heart" class="w-4 h-4"></i>
+            <span>União entre empreendedoras</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-white rounded-2xl p-7 border border-warmgray-200 flex flex-col justify-between shadow-xs hover:border-brand-300 transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gold-400/20 text-gold-600 flex items-center justify-center mb-5">
+              <i data-lucide="badge-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-warmgray-900 mb-2">Ética & Segurança Jurídica</h3>
+            <p class="text-xs sm:text-sm text-warmgray-600 leading-relaxed">
+              Compartilhamos apenas moldes com permissão de uso comercial para que as artesãs possam vender os produtos físicos finalizados com total tranquilidade para suas igrejas e clientes.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-warmgray-100 flex items-center gap-2 text-xs font-bold text-warmgray-700">
+            <i data-lucide="shield" class="w-4 h-4"></i>
+            <span>Arquivos testados e seguros</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Prompt Banner -->
+      <div class="mt-12 bg-white rounded-2xl p-6 border border-warmgray-200 max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xs">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+            <i data-lucide="gift" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-sm text-warmgray-900">Tem um molde autoral que gostaria de semear?</h4>
+            <p class="text-xs text-warmgray-500">Envie agora mesmo e faça parte do acervo oficial de ateliês cristãos.</p>
+          </div>
+        </div>
+        <button onclick="openUploadModal()" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs shrink-0 shadow-sm transition-all">
+          Disponibilizar Molde
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="depoimentos" class="py-16 bg-white border-t border-warmgray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-brand-600">Comunidade Real</h2>
+        <p class="font-serif text-2xl sm:text-3xl font-bold text-warmgray-900 mt-2">O que as artesãs dizem sobre a plataforma</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-warmgray-50 border border-warmgray-200 flex flex-col justify-between">
+          <p class="text-xs sm:text-sm text-warmgray-700 leading-relaxed italic">
+            "Antes eu perdia horas procurando moldes em grupos cheios de links suspeitos ou com medidas erradas. Na Papelaria Cristã, tudo vem organizado e com as linhas de vinco perfeitas para a Silhouette!"
+          </p>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-warmgray-200">
+            <div class="w-10 h-10 rounded-full bg-brand-200 flex items-center justify-center font-bold text-brand-800 text-sm">
+              RM
+            </div>
+            <div>
+              <div class="text-xs font-bold text-warmgray-900">Raquel Mendes</div>
+              <div class="text-[11px] text-warmgray-500">Ateliê Florescer Cristão • Goiânia/GO</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-warmgray-50 border border-warmgray-200 flex flex-col justify-between">
+          <p class="text-xs sm:text-sm text-warmgray-700 leading-relaxed italic">
+            "Eu disponibilizei três moldes de caixas bíblicas que eu mesma criei e fiquei emocionada ao ver irmãs de outros estados usando para o congresso de mulheres delas. É gratificante demais."
+          </p>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-warmgray-200">
+            <div class="w-10 h-10 rounded-full bg-gold-400/30 flex items-center justify-center font-bold text-gold-600 text-sm">
+              DB
+            </div>
+            <div>
+              <div class="text-xs font-bold text-warmgray-900">Débora Barreto</div>
+              <div class="text-[11px] text-warmgray-500">Papel & Oração Ateliê • Curitiba/PR</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-warmgray-50 border border-warmgray-200 flex flex-col justify-between">
+          <p class="text-xs sm:text-sm text-warmgray-700 leading-relaxed italic">
+            "O fato de ser sem mensalidade salva quem está começando. Peguei uma encomenda de 120 lembrancinhas de batismo para a igreja, baixei o molde em PDF e montei tudo na tesoura mesmo. Perfeito!"
+          </p>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-warmgray-200">
+            <div class="w-10 h-10 rounded-full bg-brand-300 flex items-center justify-center font-bold text-brand-900 text-sm">
+              EL
+            </div>
+            <div>
+              <div class="text-xs font-bold text-warmgray-900">Ester Lima</div>
+              <div class="text-[11px] text-warmgray-500">Feito com Amor Papelaria • Recife/PE</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner Bottom -->
+  <section class="py-16 bg-gradient-to-br from-brand-700 via-brand-800 to-warmgray-900 text-white relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">
+        Faça parte da maior rede de troca de moldes cristãos do Brasil.
+      </h2>
+      <p class="mt-4 text-sm sm:text-base text-brand-100 max-w-2xl mx-auto">
+        Cadastre-se gratuitamente para salvar seus favoritos e ajudar outras artesãs a prosperarem em seus negócios.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <button onclick="openAuthModal('signup')" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white text-brand-900 hover:bg-warmgray-100 font-bold text-sm shadow-lg transition-transform active:scale-95">
+          Participar da Comunidade
+        </button>
+        <button onclick="openUploadModal()" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-brand-600/60 hover:bg-brand-600 border border-brand-400 text-white font-bold text-sm transition-colors">
+          Tenho moldes para enviar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-warmgray-900 text-warmgray-400 text-xs py-12 border-t border-warmgray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+      
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white">
+            <i data-lucide="scissors" class="w-4 h-4 -rotate-45"></i>
+          </div>
+          <span class="font-serif text-lg font-bold text-white">Papelaria Cristã</span>
+        </div>
+        <p class="text-warmgray-400 text-[11px] leading-relaxed mb-4">
+          Plataforma colaborativa e gratuita dedicada a artesãs e empreendedoras da papelaria personalizada com propósito de fé.
+        </p>
+        <div class="flex items-center gap-3 text-warmgray-400">
+          <a href="#" class="hover:text-white transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" class="hover:text-white transition-colors"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+          <a href="#" class="hover:text-white transition-colors"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-3 text-xs uppercase tracking-wider">Formatos Suportados</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li>Silhouette Studio (.studio3)</li>
+          <li>Arquivos Vetoriais (.SVG)</li>
+          <li>Arquivos em PDF para Tesouretes</li>
+          <li>Arquivos DXF (AutoCAD e Silhouette Free)</li>
+          <li>Kits de Arte Digital (PNG 300 DPI)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-3 text-xs uppercase tracking-wider">Diretrizes & Ética</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li><a href="#" class="hover:text-white">Termos de Uso e Licença de Produção</a></li>
+          <li><a href="#" class="hover:text-white">Política de Autoria e Direitos Autorais</a></li>
+          <li><a href="#" class="hover:text-white">Diretrizes Comunitárias de Ajuda Mútua</a></li>
+          <li><a href="#" class="hover:text-white">Segurança e Verificação de Arquivos</a></li>
+          <li><a href="#" class="hover:text-white">Privacidade e Dados (LGPD)</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold mb-3 text-xs uppercase tracking-wider">Suporte & Comunidade</h4>
+        <p class="text-[11px] leading-relaxed mb-3">
+          Tem dúvidas ou quer sugerir melhorias para a nossa galeria?
+        </p>
+        <div class="bg-warmgray-800 p-3 rounded-lg border border-warmgray-700 text-[11px] space-y-1">
+          <div class="text-warmgray-200 font-semibold">contato@papelariacrista.com.br</div>
+          <div class="text-warmgray-400">Canal aberto para todas as artesãs</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 border-t border-warmgray-800 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-warmgray-500">
+      <p>© 2026 Papelaria Cristã. Projeto comunitário sem fins lucrativos. "Tudo o que fizerem, façam de todo o coração." (Cl 3:23)</p>
+      <p class="flex items-center gap-1">Desenvolvido com carinho para o Reino</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================== -->
+  <!-- MODAL 1: VISUALIZAÇÃO E DOWNLOAD DO MOLDE                      -->
+  <!-- ============================================================== -->
+  <div id="previewModal" class="fixed inset-0 z-50 hidden bg-warmgray-900/60 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-warmgray-200 transform transition-all">
+      
+      <!-- Modal Header -->
+      <div class="p-5 border-b border-warmgray-100 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span id="modalCategoryBadge" class="text-[10px] font-bold uppercase tracking-wider bg-brand-100 text-brand-800 px-2.5 py-0.5 rounded">Categoria</span>
+          <span id="modalVerifiedBadge" class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded flex items-center gap-1 border border-emerald-200">
+            <i data-lucide="check-check" class="w-3 h-3"></i> Testado no Ateliê
+          </span>
+        </div>
+        <button onclick="closePreviewModal()" class="w-8 h-8 rounded-lg bg-warmgray-100 hover:bg-warmgray-200 flex items-center justify-center text-warmgray-500 transition-colors">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6">
+        
+        <!-- Graphic Preview Banner -->
+        <div id="modalGraphicContainer" class="h-56 rounded-xl flex items-center justify-center text-white relative overflow-hidden mb-6 shadow-inner">
+          <!-- Dynamically filled with styling & preview representation -->
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
+          <div>
+            <h3 id="modalTitle" class="font-serif text-xl sm:text-2xl font-bold text-warmgray-900">Nome do Molde</h3>
+            <p id="modalAuthor" class="text-xs text-warmgray-500 mt-1 flex items-center gap-1.5">
+              <span>Compartilhado com amor por:</span> <strong class="text-warmgray-700">Ateliê</strong>
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="modalLikeBtn" onclick="toggleModalLike()" class="px-3 py-1.5 rounded-lg border border-warmgray-200 hover:bg-warmgray-50 text-xs font-semibold text-warmgray-700 flex items-center gap-1.5 transition-colors">
+              <i data-lucide="heart" class="w-4 h-4 text-rose-500"></i>
+              <span id="modalLikesCount">0</span>
+            </button>
+          </div>
+        </div>
+
+        <p id="modalDescription" class="text-xs sm:text-sm text-warmgray-600 leading-relaxed mb-6 bg-warmgray-50 p-4 rounded-xl border border-warmgray-200">
+          Descrição técnica do molde e instruções de montagem.
+        </p>
+
+        <!-- Technical Specs Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 text-xs">
+          <div class="p-3 rounded-lg bg-warmgray-50 border border-warmgray-200">
+            <span class="text-warmgray-400 block text-[10px] uppercase font-bold">Papel Indicado</span>
+            <span id="modalPaper" class="font-bold text-warmgray-800">Offset 180g / 240g</span>
+          </div>
+          <div class="p-3 rounded-lg bg-warmgray-50 border border-warmgray-200">
+            <span class="text-warmgray-400 block text-[10px] uppercase font-bold">Corte</span>
+            <span id="modalMachine" class="font-bold text-warmgray-800">Silhouette & Tesoura</span>
+          </div>
+          <div class="p-3 rounded-lg bg-warmgray-50 border border-warmgray-200">
+            <span class="text-warmgray-400 block text-[10px] uppercase font-bold">Tamanho Arquivo</span>
+            <span id="modalSize" class="font-bold text-warmgray-800">3.4 MB (Zip)</span>
+          </div>
+          <div class="p-3 rounded-lg bg-warmgray-50 border border-warmgray-200">
+            <span class="text-warmgray-400 block text-[10px] uppercase font-bold">Acesso</span>
+            <span class="font-bold text-emerald-700">100% Gratuito</span>
+          </div>
+        </div>
+
+        <!-- Formats Included Badges -->
+        <div class="mb-6">
+          <span class="text-[11px] font-bold text-warmgray-500 block mb-2 uppercase tracking-wide">Formatos inclusos no download:</span>
+          <div id="modalFormatsList" class="flex flex-wrap gap-2">
+            <!-- Format badges -->
+          </div>
+        </div>
+
+        <!-- Download Action Box -->
+        <div class="pt-4 border-t border-warmgray-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div class="text-[11px] text-warmgray-500 flex items-center gap-1.5">
+            <i data-lucide="shield" class="w-4 h-4 text-emerald-600"></i>
+            <span>Arquivo comunitário limpo e verificado.</span>
+          </div>
+          <button id="downloadActionBtn" onclick="handleDownloadSimulated()" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Baixar Molde Grátis (.ZIP)</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- MODAL 2: ENVIAR NOVO MOLDE (CONTRIBUIÇÃO DA USUÁRIA)           -->
+  <!-- ============================================================== -->
+  <div id="uploadModal" class="fixed inset-0 z-50 hidden bg-warmgray-900/60 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-warmgray-200 transform transition-all">
+      
+      <div class="p-5 border-b border-warmgray-100 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center">
+            <i data-lucide="upload-cloud" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="font-serif text-base font-bold text-warmgray-900">Compartilhar Molde</h3>
+            <p class="text-[11px] text-warmgray-500">Ajude outras artesãs compartilhando seu arquivo de corte</p>
+          </div>
+        </div>
+        <button onclick="closeUploadModal()" class="w-8 h-8 rounded-lg bg-warmgray-100 hover:bg-warmgray-200 flex items-center justify-center text-warmgray-500 transition-colors">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <form id="uploadForm" onsubmit="handleUploadSubmit(event)" class="p-6 space-y-4">
+        
+        <div>
+          <label class="block text-xs font-bold text-warmgray-700 mb-1">Título do Molde / Peça *</label>
+          <input required type="text" id="uploadTitle" placeholder="Ex: Caixa Bíblia para 4 Brigadeiros - Corte Silhouette" class="w-full px-3 py-2 text-xs rounded-lg border border-warmgray-300 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-warmgray-700 mb-1">Categoria Principal *</label>
+            <select required id="uploadCategory" class="w-full px-3 py-2 text-xs rounded-lg border border-warmgray-300 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 bg-white">
+              <option value="caixas">Caixas & Embalagens 3D</option>
+              <option value="devocional">Devocional & Oração</option>
+              <option value="lembrancinhas">Cultos & Congressos</option>
+              <option value="planners">Planners & Cadernos</option>
+              <option value="infantil">EBD & Ministério Infantil</option>
+              <option value="batismo">Batismo & Ceia</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-warmgray-700 mb-1">Seu Nome / Nome do Ateliê *</label>
+            <input required type="text" id="uploadAuthor" placeholder="Ex: Ateliê Graça & Fé" class="w-full px-3 py-2 text-xs rounded-lg border border-warmgray-300 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500">
+          </div>
+        </div>
+
+        <!-- Format Checkboxes -->
+        <div>
+          <label class="block text-xs font-bold text-warmgray-700 mb-1">Formatos inclusos no seu arquivo *</label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs text-warmgray-700">
+            <label class="flex items-center gap-1.5 p-2 rounded border border-warmgray-200 cursor-pointer hover:bg-warmgray-50">
+              <input type="checkbox" name="uploadFormats" value="STUDIO" checked class="rounded text-brand-600 focus:ring-0">
+              <span>.STUDIO</span>
+            </label>
+            <label class="flex items-center gap-1.5 p-2 rounded border border-warmgray-200 cursor-pointer hover:bg-warmgray-50">
+              <input type="checkbox" name="uploadFormats" value="PDF" checked class="rounded text-brand-600 focus:ring-0">
+              <span>.PDF</span>
+            </label>
+            <label class="flex items-center gap-1.5 p-2 rounded border border-warmgray-200 cursor-pointer hover:bg-warmgray-50">
+              <input type="checkbox" name="uploadFormats" value="SVG" class="rounded text-brand-600 focus:ring-0">
+              <span>.SVG</span>
+            </label>
+            <label class="flex items-center gap-1.5 p-2 rounded border border-warmgray-200 cursor-pointer hover:bg-warmgray-50">
+              <input type="checkbox" name="uploadFormats" value="DXF" class="rounded text-brand-600 focus:ring-0">
+              <span>.DXF</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-warmgray-700 mb-1">Instruções / Papel sugerido / Versículo</label>
+          <textarea id="uploadDescription" rows="3" placeholder="Ex: Usar papel offset 180g ou color plus 240g. Corte na Silhouette lâmina 3, força 20. Versículo de referência no rodapé." class="w-full px-3 py-2 text-xs rounded-lg border border-warmgray-300 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500"></textarea>
+        </div>
+
+        <!-- Drag and drop fake container -->
+        <div>
+          <label class="block text-xs font-bold text-warmgray-700 mb-1">Arquivo Compactado (.ZIP ou .STUDIO) *</label>
+          <div class="border-2 border-dashed border-warmgray-300 rounded-xl p-4 text-center hover:border-brand-500 transition-colors bg-warmgray-50 cursor-pointer" onclick="document.getElementById('fakeFileInput').click()">
+            <input type="file" id="fakeFileInput" class="hidden" onchange="handleFileSelected(this)">
+            <i data-lucide="file-up" class="w-8 h-8 text-brand-600 mx-auto mb-1"></i>
+            <p id="fileUploadPrompt" class="text-xs font-semibold text-warmgray-700">Clique para selecionar ou arraste seu arquivo aqui</p>
+            <p class="text-[10px] text-warmgray-400 mt-0.5">Suporta ZIP, STUDIO3, SVG, PDF (Até 25MB)</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-2 pt-1">
+          <input required type="checkbox" id="termsCheck" class="mt-0.5 rounded text-brand-600 focus:ring-0">
+          <label for="termsCheck" class="text-[11px] text-warmgray-600 leading-tight">
+            Confirmo que este molde é autoral ou de livre distribuição e autorizo o compartilhamento gratuito para auxílio mútuo de outras artesãs.
+          </label>
+        </div>
+
+        <div class="pt-3 border-t border-warmgray-100 flex items-center justify-end gap-2">
+          <button type="button" onclick="closeUploadModal()" class="px-4 py-2 rounded-lg text-xs font-semibold text-warmgray-600 hover:bg-warmgray-100 transition-colors">
+            Cancelar
+          </button>
+          <button type="submit" class="px-5 py-2.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold transition-all shadow-sm flex items-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4"></i>
+            <span>Publicar Molde na Galeria</span>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- MODAL 3: ENTRAR / CRIAR CONTA (LOGIN & REGISTRO)               -->
+  <!-- ============================================================== -->
+  <div id="authModal" class="fixed inset-0 z-50 hidden bg-warmgray-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl border border-warmgray-200">
+      
+      <div class="flex justify-between items-center mb-5">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center">
+            <i data-lucide="scissors" class="w-4 h-4 -rotate-45"></i>
+          </div>
+          <span class="font-serif font-bold text-base text-warmgray-900" id="authModalTitle">Entrar na Comunidade</span>
+        </div>
+        <button onclick="closeAuthModal()" class="w-7 h-7 rounded-lg bg-warmgray-100 hover:bg-warmgray-200 flex items-center justify-center text-warmgray-500">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <form onsubmit="handleAuthSubmit(event)" class="space-y-3.5">
+        <div id="authNameField" class="hidden">
+          <label class="block text-xs font-bold text-warmgray-700 mb-1">Seu Nome / Nome do Ateliê</label>
+          <input type="text" placeholder="Ex: Maria - Ateliê Flor de Lótus" class="w-full px-3 py-2 text-xs rounded-lg border border-warmgray-300 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-warmgray-700 mb-1">E-mail</label>
+          <input required type="email" placeholder="seuemail@exemplo.com" class="w-full px-3 py-2 text-xs rounded-lg border border-warmgray-300 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-warmgray-700 mb-1">Senha</label>
+          <input required type="password" placeholder="••••••••" class="w-full px-3 py-2 text-xs rounded-lg border border-warmgray-300 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500">
+        </div>
+
+        <button type="submit" id="authSubmitBtn" class="w-full py-2.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs shadow-md transition-all">
+          Acessar Comunidade
+        </button>
+
+        <div class="relative flex py-1 items-center">
+          <div class="flex-grow border-t border-warmgray-200"></div>
+          <span class="flex-shrink mx-3 text-[10px] text-warmgray-400 uppercase font-semibold">ou acesse com</span>
+          <div class="flex-grow border-t border-warmgray-200"></div>
+        </div>
+
+        <button type="button" onclick="showToast('Login com Google autenticado com sucesso!')" class="w-full py-2 rounded-lg border border-warmgray-300 hover:bg-warmgray-50 text-xs font-semibold text-warmgray-700 flex items-center justify-center gap-2 transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+          Google
+        </button>
+      </form>
+
+      <div class="mt-4 text-center text-xs text-warmgray-500">
+        <span id="authToggleText">Não tem conta ainda?</span>
+        <button onclick="toggleAuthMode()" id="authToggleBtn" class="text-brand-600 font-bold hover:underline ml-1">Participar gratuitamente</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 hidden bg-warmgray-900 text-white px-4 py-3 rounded-xl shadow-xl border border-warmgray-700 flex items-center gap-3 text-xs max-w-sm transform transition-all">
+    <div id="toastIcon" class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+      <i data-lucide="check" class="w-3.5 h-3.5"></i>
+    </div>
+    <div id="toastMessage" class="font-medium text-warmgray-200">Mensagem do sistema</div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- JAVASCRIPT: DATA & INTERACTIVITY                               -->
+  <!-- ============================================================== -->
+  <script>
+    // Initial Seed Database of Christian Stationery Templates (Moldes)
+    let moldesData = [
+      {
+        id: 1,
+        title: "Caixa Bíblia 3D para Doces e Brigadeiros Gourmet",
+        category: "caixas",
+        categoryName: "Caixas 3D",
+        author: "Ateliê Graça & Arte (Goiânia/GO)",
+        formats: ["STUDIO", "PDF", "SVG"],
+        paper: "Offset 240g / Color Plus",
+        machine: "Silhouette Cameo / Tesoura",
+        size: "4.2 MB",
+        downloads: 1420,
+        likes: 384,
+        isLiked: false,
+        themeColor: "from-amber-700 to-amber-900",
+        icon: "book-open",
+        description: "Molde completo com divisória interna para 4 doces gourmets. Tampa que abre em formato de páginas sagradas com versículo de João 3:16 gravado com marca d'água elegante. Muito pedido em congressos e dias comemorativos.",
+        verse: "Jo 3:16"
+      },
+      {
+        id: 2,
+        title: "Kit Devocional Mulher Virtuosa 2026 - Miolo & Capa A5",
+        category: "devocional",
+        categoryName: "Devocional",
+        author: "Ruth Papelaria Criativa",
+        formats: ["PDF", "STUDIO"],
+        paper: "Sulfite 90g (Miolo) e Holler (Capa)",
+        machine: "Tesoura / Guilhotina",
+        size: "18.5 MB",
+        downloads: 2890,
+        likes: 712,
+        isLiked: true,
+        themeColor: "from-rose-600 to-rose-800",
+        icon: "heart",
+        description: "Layout de miolo devocional diário: campo para Leitura do Dia, O que Deus falou comigo, Motivos de Gratidão e Pedidos de Oração. Acompanha gabarito para furação Wire-o e corte de cantoneiras.",
+        verse: "Pv 31:10"
+      },
+      {
+        id: 3,
+        title: "Lembrancinha Culto das Mulheres - Marcador Floral & Envelope",
+        category: "lembrancinhas",
+        categoryName: "Cultos & Congressos",
+        author: "Estúdio Pérolas do Reino",
+        formats: ["STUDIO", "PDF", "SVG", "DXF"],
+        paper: "Offset 180g Fosco",
+        machine: "Silhouette / Cricut / Tesoura",
+        size: "2.8 MB",
+        downloads: 3410,
+        likes: 920,
+        isLiked: false,
+        themeColor: "from-emerald-700 to-emerald-900",
+        icon: "flower-2",
+        description: "Marcador de página com recorte em formato de lírio e luva de proteção delicada para presentear no culto das irmãs. Espaço para aplicar fita de cetim ou tassel.",
+        verse: "Ct 2:1"
+      },
+      {
+        id: 4,
+        title: "Porta Bombom Cruz & Ramos de Oliveira para Páscoa",
+        category: "caixas",
+        categoryName: "Caixas 3D",
+        author: "Ateliê Maná Diário",
+        formats: ["STUDIO", "SVG", "PDF"],
+        paper: "Color Plus 180g Havana ou Kraft",
+        machine: "Silhouette Cameo / Portrait",
+        size: "1.9 MB",
+        downloads: 1850,
+        likes: 430,
+        isLiked: false,
+        themeColor: "from-amber-800 to-stone-900",
+        icon: "cross",
+        description: "Montagem em peça única sem necessidade de cola excessiva. Encaixe perfeito para bombom Sonho de Valsa ou Serenata com recorte vazado da Cruz da Ressurreição.",
+        verse: "Lc 24:6"
+      },
+      {
+        id: 5,
+        title: "Planner de Oração e Jejum Trimestral - Formato Colegial",
+        category: "planners",
+        categoryName: "Planners & Cadernos",
+        author: "Sarah Design Cristão",
+        formats: ["PDF"],
+        paper: "Offset 90g e Papel Paraná",
+        machine: "Corte Manual / Guilhotina",
+        size: "14.1 MB",
+        downloads: 980,
+        likes: 245,
+        isLiked: false,
+        themeColor: "from-indigo-800 to-slate-900",
+        icon: "calendar-check",
+        description: "Controle de leitura bíblica anual cronológica, fichas de oração intercessória pela família e igreja, páginas de jejum e metas espirituais.",
+        verse: "1Ts 5:17"
+      },
+      {
+        id: 6,
+        title: "Kit EBD Infantil: Caixa Arca de Noé com Animais em Camadas",
+        category: "infantil",
+        categoryName: "EBD Infantil",
+        author: "Tia Débora Criativa",
+        formats: ["STUDIO", "SVG", "PDF"],
+        paper: "Offset 180g ou Fotográfico Matte",
+        machine: "Silhouette / Tesoura",
+        size: "6.7 MB",
+        downloads: 2120,
+        likes: 640,
+        isLiked: false,
+        themeColor: "from-teal-700 to-cyan-900",
+        icon: "smile",
+        description: "Recurso visual pedagógico e lembrancinha para a Escola Bíblica Dominical. Peça que vira caixinha para guloseimas com animais em 3D em camadas de papel.",
+        verse: "Gn 8:1"
+      },
+      {
+        id: 7,
+        title: "Lembrança de Batismo nas Águas: Caixa Alabastro com Tag Pomba",
+        category: "batismo",
+        categoryName: "Batismo & Ceia",
+        author: "Mãos Ungidas Papelaria",
+        formats: ["STUDIO", "PDF", "DXF"],
+        paper: "Perolado Branco 180g / Lamicote Dourado",
+        machine: "Silhouette / Cricut",
+        size: "3.5 MB",
+        downloads: 1340,
+        likes: 410,
+        isLiked: false,
+        themeColor: "from-sky-700 to-blue-900",
+        icon: "feather",
+        description: "Caixa pirâmide com topo em relevo representando o Espírito Santo em formato de pomba. Acompanha tag personalizada com data do batismo e espaço para versículo.",
+        verse: "Mt 28:19"
+      },
+      {
+        id: 8,
+        title: "Envelope Luva para Dízimo e Oferta de Gratidão Especial",
+        category: "lembrancinhas",
+        categoryName: "Cultos & Congressos",
+        author: "Ateliê Ebenézer",
+        formats: ["PDF", "STUDIO"],
+        paper: "Offset 120g ou Kraft 140g",
+        machine: "Tesoura / Plotter",
+        size: "1.2 MB",
+        downloads: 4190,
+        likes: 890,
+        isLiked: true,
+        themeColor: "from-stone-700 to-stone-900",
+        icon: "mail",
+        description: "Envelope com aba autotravante e estampa discreta e elegante em arabescos bíblicos. Ideal para campanhas de oração, gratidão e eventos de mordomia cristã.",
+        verse: "2Co 9:7"
+      }
+    ];
+
+    // Current State
+    let currentCategory = 'all';
+    let currentFormat = 'all';
+    let currentSort = 'popular';
+    let searchQuery = '';
+    let selectedMolde = null;
+    let authMode = 'login';
+
+    // Initialize Page
+    document.addEventListener('DOMContentLoaded', () => {
+      renderGallery();
+      lucide.createIcons();
+    });
+
+    // Render Gallery Cards
+    function renderGallery() {
+      const grid = document.getElementById('moldesGrid');
+      const empty = document.getElementById('emptyState');
+      grid.innerHTML = '';
+
+      let filtered = moldesData.filter(item => {
+        if (currentCategory !== 'all' && item.category !== currentCategory) {
+          return false;
+        }
+        if (currentFormat !== 'all' && !item.formats.includes(currentFormat)) {
+          return false;
+        }
+        if (searchQuery.trim() !== '') {
+          const query = searchQuery.toLowerCase();
+          const matchTitle = item.title.toLowerCase().includes(query);
+          const matchDesc = item.description.toLowerCase().includes(query);
+          const matchAuthor = item.author.toLowerCase().includes(query);
+          const matchCat = item.categoryName.toLowerCase().includes(query);
+          if (!matchTitle && !matchDesc && !matchAuthor && !matchCat) {
+            return false;
+          }
+        }
+        return true;
+      });
+
+      if (currentSort === 'popular') {
+        filtered.sort((a, b) => b.downloads - a.downloads);
+      } else if (currentSort === 'recent') {
+        filtered.sort((a, b) => b.id - a.id);
+      } else if (currentSort === 'likes') {
+        filtered.sort((a, b) => b.likes - a.likes);
+      }
+
+      if (filtered.length === 0) {
+        empty.classList.remove('hidden');
+      } else {
+        empty.classList.add('hidden');
+      }
+
+      filtered.forEach(molde => {
+        const card = document.createElement('div');
+        card.className = "bg-white rounded-2xl border border-warmgray-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-brand-300 transition-all duration-300 flex flex-col justify-between group";
+
+        const formatBadges = molde.formats.map(f => {
+          let badgeColor = "bg-warmgray-100 text-warmgray-700";
+          if (f === "STUDIO") badgeColor = "bg-purple-50 text-purple-700 border border-purple-200";
+          if (f === "SVG") badgeColor = "bg-amber-50 text-amber-700 border border-amber-200";
+          if (f === "PDF") badgeColor = "bg-rose-50 text-rose-700 border border-rose-200";
+          if (f === "DXF") badgeColor = "bg-blue-50 text-blue-700 border border-blue-200";
+          return `<span class="text-[9px] font-bold px-1.5 py-0.5 rounded ${badgeColor}">${f}</span>`;
+        }).join('');
+
+        const isLikedClass = molde.isLiked ? 'text-rose-600 fill-rose-600' : 'text-warmgray-400 group-hover:text-rose-500';
+
+        card.innerHTML = `
+          <div>
+            <!-- Card Image Representation / Visual Header -->
+            <div class="h-44 bg-gradient-to-tr ${molde.themeColor} relative p-4 flex flex-col justify-between text-white overflow-hidden group-hover:scale-[1.01] transition-transform">
+              <div class="absolute inset-0 bg-black/15"></div>
+              
+              <div class="relative z-10 flex items-center justify-between">
+                <span class="text-[10px] font-extrabold uppercase tracking-wider bg-black/40 backdrop-blur-md px-2 py-0.5 rounded text-warmgray-100 border border-white/10">
+                  ${molde.categoryName}
+                </span>
+                <button onclick="toggleCardLike(${molde.id}, event)" class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center hover:bg-white/40 transition-colors">
+                  <i data-lucide="heart" class="w-4 h-4 ${isLikedClass}"></i>
+                </button>
+              </div>
+
+              <!-- Graphic Centerpiece Representation -->
+              <div class="relative z-10 text-center my-auto">
+                <div class="w-12 h-12 mx-auto rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-1 text-white shadow-inner">
+                  <i data-lucide="${molde.icon}" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-serif tracking-widest uppercase opacity-85">${molde.verse || 'FÉ & ARTE'}</span>
+              </div>
+
+              <!-- Formats bar inside card header -->
+              <div class="relative z-10 flex items-center gap-1">
+                ${formatBadges}
+              </div>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="p-4">
+              <h3 class="font-serif font-bold text-sm text-warmgray-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                ${molde.title}
+              </h3>
+              
+              <p class="text-[11px] text-warmgray-500 mt-2 line-clamp-2 leading-relaxed">
+                ${molde.description}
+              </p>
+
+              <div class="mt-3 pt-3 border-t border-warmgray-100 flex items-center justify-between text-[11px] text-warmgray-500">
+                <span class="truncate max-w-[150px] font-medium text-warmgray-600">✍️ ${molde.author.split('(')[0]}</span>
+                <span class="flex items-center gap-1 font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                  <i data-lucide="download" class="w-3.5 h-3.5"></i> ${molde.downloads} downloads
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Bottom Action -->
+          <div class="p-4 pt-0">
+            <button onclick="openPreviewModal(${molde.id})" class="w-full py-2 px-3 rounded-xl bg-warmgray-50 hover:bg-brand-600 hover:text-white border border-warmgray-200 hover:border-brand-600 text-warmgray-700 font-bold text-xs transition-all flex items-center justify-center gap-1.5 shadow-2xs">
+              <i data-lucide="download" class="w-3.5 h-3.5"></i>
+              <span>Baixar Molde Grátis</span>
+            </button>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+
+      lucide.createIcons();
+    }
+
+    // Filter Logic
+    function setCategoryFilter(cat) {
+      currentCategory = cat;
+      
+      const buttons = document.querySelectorAll('#categoryPillsContainer .category-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-warmgray-900', 'text-white');
+        btn.classList.add('bg-warmgray-100', 'text-warmgray-700');
+      });
+
+      event?.currentTarget?.classList?.remove('bg-warmgray-100', 'text-warmgray-700');
+      event?.currentTarget?.classList?.add('bg-warmgray-900', 'text-white');
+
+      renderGallery();
+      
+      const galeriaEl = document.getElementById('galeria');
+      if (galeriaEl && window.scrollY < 200) {
+        galeriaEl.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function handleLiveFilter() {
+      searchQuery = document.getElementById('gallerySearchInput').value;
+      currentFormat = document.getElementById('formatFilter').value;
+      renderGallery();
+    }
+
+    function handleSort() {
+      currentSort = document.getElementById('sortFilter').value;
+      renderGallery();
+    }
+
+    function handleHeroSearch() {
+      const heroQuery = document.getElementById('heroSearchInput').value;
+      document.getElementById('gallerySearchInput').value = heroQuery;
+      searchQuery = heroQuery;
+      renderGallery();
+      document.getElementById('galeria').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function quickFilter(term) {
+      document.getElementById('heroSearchInput').value = term;
+      document.getElementById('gallerySearchInput').value = term;
+      searchQuery = term;
+      renderGallery();
+      document.getElementById('galeria').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetFilters() {
+      currentCategory = 'all';
+      currentFormat = 'all';
+      searchQuery = '';
+      document.getElementById('gallerySearchInput').value = '';
+      document.getElementById('formatFilter').value = 'all';
+      setCategoryFilter('all');
+    }
+
+    // Like Toggle
+    function toggleCardLike(id, event) {
+      event.stopPropagation();
+      const item = moldesData.find(m => m.id === id);
+      if (item) {
+        item.isLiked = !item.isLiked;
+        item.likes += item.isLiked ? 1 : -1;
+        showToast(item.isLiked ? `Molde "${item.title.substring(0, 25)}..." salvo nos favoritos!` : 'Removido dos favoritos.');
+        renderGallery();
+      }
+    }
+
+    function toggleModalLike() {
+      if (selectedMolde) {
+        selectedMolde.isLiked = !selectedMolde.isLiked;
+        selectedMolde.likes += selectedMolde.isLiked ? 1 : -1;
+        document.getElementById('modalLikesCount').textContent = selectedMolde.likes;
+        showToast(selectedMolde.isLiked ? 'Molde salvo nos favoritos!' : 'Removido dos favoritos.');
+        renderGallery();
+      }
+    }
+
+    // Modal 1: Details & Download
+    function openPreviewModal(id) {
+      selectedMolde = moldesData.find(m => m.id === id);
+      if (!selectedMolde) return;
+
+      document.getElementById('modalCategoryBadge').textContent = selectedMolde.categoryName;
+      document.getElementById('modalTitle').textContent = selectedMolde.title;
+      document.getElementById('modalAuthor').innerHTML = `<span>Compartilhado com amor por:</span> <strong class="text-warmgray-800">${selectedMolde.author}</strong>`;
+      document.getElementById('modalDescription').textContent = selectedMolde.description;
+      document.getElementById('modalPaper').textContent = selectedMolde.paper;
+      document.getElementById('modalMachine').textContent = selectedMolde.machine;
+      document.getElementById('modalSize').textContent = selectedMolde.size;
+      document.getElementById('modalLikesCount').textContent = selectedMolde.likes;
+
+      const banner = document.getElementById('modalGraphicContainer');
+      banner.className = `h-48 rounded-xl bg-gradient-to-tr ${selectedMolde.themeColor} flex flex-col items-center justify-center text-white relative overflow-hidden mb-6 shadow-inner`;
+      banner.innerHTML = `
+        <div class="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-2 shadow-lg">
+          <i data-lucide="${selectedMolde.icon}" class="w-7 h-7"></i>
+        </div>
+        <div class="text-sm font-serif font-bold tracking-wider">${selectedMolde.verse ? 'VERSÍCULO CHAVE: ' + selectedMolde.verse : 'MOLDE EXCLUSIVO PAPELARIA CRISTÃ'}</div>
+        <div class="text-[11px] opacity-80 mt-0.5">Arquivo calibrado com linhas de dobra tracejadas e corte contínuo</div>
+      `;
+
+      const formatsContainer = document.getElementById('modalFormatsList');
+      formatsContainer.innerHTML = selectedMolde.formats.map(f => {
+        return `<span class="px-2.5 py-1 rounded bg-warmgray-100 border border-warmgray-200 text-xs font-bold text-warmgray-800 flex items-center gap-1">
+          <i data-lucide="file-check" class="w-3.5 h-3.5 text-brand-600"></i> ${f}
+        </span>`;
+      }).join('');
+
+      document.getElementById('previewModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closePreviewModal() {
+      document.getElementById('previewModal').classList.add('hidden');
+    }
+
+    function handleDownloadSimulated() {
+      if (!selectedMolde) return;
+      const btn = document.getElementById('downloadActionBtn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = `<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> Preparando Arquivo...`;
+      lucide.createIcons();
+
+      setTimeout(() => {
+        selectedMolde.downloads += 1;
+        btn.innerHTML = `<i data-lucide="check" class="w-4 h-4"></i> Download Gratuito Concluído!`;
+        lucide.createIcons();
+        showToast(`Download de "${selectedMolde.title.substring(0, 30)}..." iniciado com sucesso! Boas criações no ateliê!`);
+        renderGallery();
+
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          lucide.createIcons();
+          closePreviewModal();
+        }, 1200);
+      }, 1000);
+    }
+
+    // Modal 2: Upload New Molde
+    function openUploadModal() {
+      document.getElementById('uploadModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeUploadModal() {
+      document.getElementById('uploadModal').classList.add('hidden');
+    }
+
+    function handleFileSelected(input) {
+      if (input.files && input.files[0]) {
+        document.getElementById('fileUploadPrompt').innerHTML = `
+          <span class="text-emerald-600 font-bold">Arquivo anexado:</span> ${input.files[0].name} (${(input.files[0].size / (1024*1024)).toFixed(2)} MB)
+        `;
+      }
+    }
+
+    function handleUploadSubmit(event) {
+      event.preventDefault();
+      const title = document.getElementById('uploadTitle').value;
+      const category = document.getElementById('uploadCategory').value;
+      const author = document.getElementById('uploadAuthor').value;
+      const description = document.getElementById('uploadDescription').value;
+
+      const checkedBoxes = document.querySelectorAll('input[name="uploadFormats"]:checked');
+      const formats = Array.from(checkedBoxes).map(cb => cb.value);
+      if (formats.length === 0) formats.push("PDF");
+
+      const catMap = {
+        caixas: "Caixas 3D",
+        devocional: "Devocional",
+        lembrancinhas: "Cultos & Congressos",
+        planners: "Planners & Cadernos",
+        infantil: "EBD Infantil",
+        batismo: "Batismo & Ceia"
+      };
+
+      const newMolde = {
+        id: Date.now(),
+        title: title,
+        category: category,
+        categoryName: catMap[category] || "Papelaria",
+        author: author + " (Comunidade)",
+        formats: formats,
+        paper: "Offset 180g / Sugerido pela artesã",
+        machine: "Silhouette & Tesoura",
+        size: "3.1 MB",
+        downloads: 1,
+        likes: 1,
+        isLiked: false,
+        themeColor: "from-brand-600 to-warmgray-900",
+        icon: "scissors",
+        description: description || "Molde recém-enviado por uma artesã da comunidade. Verificado e pronto para corte.",
+        verse: "Pv 16:3"
+      };
+
+      moldesData.unshift(newMolde);
+      renderGallery();
+
+      closeUploadModal();
+      document.getElementById('uploadForm').reset();
+      document.getElementById('fileUploadPrompt').textContent = "Clique para selecionar ou arraste seu arquivo aqui";
+
+      showToast("Glória a Deus! Seu molde foi publicado com sucesso na galeria para abençoar outros ateliês!");
+      document.getElementById('galeria').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Modal 3: Authentication
+    function openAuthModal(mode) {
+      authMode = mode;
+      updateAuthUI();
+      document.getElementById('authModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeAuthModal() {
+      document.getElementById('authModal').classList.add('hidden');
+    }
+
+    function toggleAuthMode() {
+      authMode = (authMode === 'login') ? 'signup' : 'login';
+      updateAuthUI();
+    }
+
+    function updateAuthUI() {
+      const title = document.getElementById('authModalTitle');
+      const nameField = document.getElementById('authNameField');
+      const submitBtn = document.getElementById('authSubmitBtn');
+      const toggleText = document.getElementById('authToggleText');
+      const toggleBtn = document.getElementById('authToggleBtn');
+
+      if (authMode === 'login') {
+        title.textContent = "Entrar na Comunidade";
+        nameField.classList.add('hidden');
+        submitBtn.textContent = "Acessar Plataforma";
+        toggleText.textContent = "Não tem uma conta ainda?";
+        toggleBtn.textContent = "Participar grátis";
+      } else {
+        title.textContent = "Criar Perfil de Artesã";
+        nameField.classList.remove('hidden');
+        submitBtn.textContent = "Cadastrar Gratuitamente";
+        toggleText.textContent = "Já possui cadastro?";
+        toggleBtn.textContent = "Fazer login";
+      }
+    }
+
+    function handleAuthSubmit(event) {
+      event.preventDefault();
+      closeAuthModal();
+      showToast(authMode === 'login' ? "Bem-vinda de volta à Papelaria Cristã!" : "Perfil criado com sucesso! Acesso livre e irrestrito a todos os moldes.");
+    }
+
+    // Global Toast Notification
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.textContent = message;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 4000);
+    }
+
+    // Close modals on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closePreviewModal();
+        closeUploadModal();
+        closeAuthModal();
+      }
+    });
+
+    // Backdrop click close
+    ['previewModal', 'uploadModal', 'authModal'].forEach(id => {
+      const modal = document.getElementById(id);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
